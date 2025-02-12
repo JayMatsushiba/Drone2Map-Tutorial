@@ -3,12 +3,20 @@ Author: Jay Matsushiba (jmatsush@sfu.ca)
 Date: February 11 2025 
 Software: ArcGIS Drone2Map Version 2023.2.0
 
-This tutorial, the sample data, and the sample project can be downloaded from: <a>https://github.com/JayMatsushiba/Drone2Map-Tutorial.git</a>. This tutorial was originally created by Jay Matsushiba in his role as GIS Peer with Simon Fraser University.   
+## Setup
+This tutorial, the sample data, and the sample project can be downloaded from: <a>https://github.com/JayMatsushiba/Drone2Map-Tutorial.git</a>.
+
+If you are familiar with Git and GitHub, you can clone the repository to your device with the following command:
+`git clone https://github.com/JayMatsushiba/Tutorial-Drone2Map.git`
+
+Simon Fraser University provides an Education Site License for students, staff, and researchers to use Drone2Map for academic use only. Details on how to download, install, and authenticate a copy of the software on your computer can be found here: <a>https://www.lib.sfu.ca/find/other-materials/data-gis/gis/software-arc-gis#-arcgis-drone2map</a> (This link requires you to login)
 
 ## Introduction 
 Aerial drones, or officially known as Remotely Piloted Aircraft Systems (RPAS) in Canada, have enjoyed increased capabilities and ease of use, simultatenous with decreasing cost. These factors have increased their adoption in a range of fields, including in geography for producing maps. Now, with inexpensive hardware (less than $1000 for the RPAS) and software, we can create high resolution georeferenced data products. In this tutorial, we will be showing how to create using our own orthophotos, digital surface models, and digital terrain models with ArcGIS Drone2Map. These output data products will be ready for use in other Geographic Information Systems (GIS), such as ArcGIS Pro and QGIS. 
 
 This tutorial assumes some basic experience with using GIS software, particularly ArcGIS Pro. 
+
+This tutorial was originally created by Jay Matsushiba in his role as GIS Peer with Simon Fraser University.   
 
 ## Input Data 
 ### Basic RPAS Flight Plan Considerations 
@@ -47,9 +55,6 @@ You can check for GPS metadata by:
 ![GPS metadata view](tutorial_images/gps_metadata.png)
 
 ## Using ArcGIS Drone2Map 
-### Installation Instructions 
-Simon Fraser University provides an Education Site License for students, staff, and researchers to use Drone2Map for academic use only. Details on how to download, install, and authenticate a copy of the software on your computer can be found here: <a>https://www.lib.sfu.ca/find/other-materials/data-gis/gis/software-arc-gis#-arcgis-drone2map</a> (This link requires you to login)
-
 ### Creating a New Project
 When you open Drone2Map for the first time, you should be greeted by the following window. 
 1. We are going to be creating 2D products, so we can select `2D Products` as the option under `Processing Template`. 
