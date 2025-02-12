@@ -94,17 +94,28 @@ For all of the basic options, we are going to leave them as the defaults as pres
 2. This window has the parameters for the output raster 2D products. These include orthophotos, digital surface models (DSM), and digital terrain models (DTM). As a review of the differences: 
     - <strong>Ortho(photos)</strong> are stitched together from images from our RPAS, resulting in a georeferenced raster spatial layer that describes colour information. 
     - <strong>Digital Surface Models (DSM)</strong> are raster spatial layers that describe the height of each cell, including natural (ex. trees) and built features (ex. houses).
-    - <strong>Digital Terrain Models (DTM)</strong> are raster spatial layers that describe the height of each cell, with natural and built features removed. 
+    - <strong>Digital Terrain Models (DTM)</strong> are raster spatial layers that describe the height of each cell, with natural and built features removed. This is not enabled by default.
 3. You can leave these parameters as their defaults. 
 
 ![2D Products](tutorial_images/2d_products.PNG)
 
-### Start Processing! 
+### Processing! 
 1. Click on the `Start` button that is within the `Processing` group, under the `Home` menu. 
-2. Your processing has began! You should see at the bottom of the `Manage` pane the progress bar appear. This processing will take a few minutes, so feel free to take a short break here. 
+2. Your processing has began! You should see at the bottom of the `Manage` pane the progress bar appear. This processing will take a few minutes, so feel free to take a short break here. Once complete, you'll see the progress bar at 100% and the data products will be added to your `2D Map`. 
 ![Start Processing](tutorial_images/start_processing.PNG)
 
-## End Products 
+## End Products
+Once the processing has complete, you will see the data products added to your `2D Map`. These should include the `True Ortho` and the `Digital Surface Model`. Just like in ArcGIS Pro, we can see these layers in the `Contents` pane on the left side of the interface. You can select and reorder the layers to review the outputs and confirm that they are what you expect. 
+
+### True Ortho
+![True Ortho](tutorial_images/true_ortho.PNG)
+### Digital Surface Model 
+![Digital Surface Model](tutorial_images/digital_surface_model.PNG)
+### Export Files from Drone2Map
+1. We can export the rasters we produced by right clicking the layer in the `Contents`, hovering over the `Data` in the dropdown, and then clicking `Export Raster`. 
+2. We should change the `Output Raster Dataset` parameter to change the save location, depending on how you are organizing your files. Make sure the `Output Format` is `TIFF`. Otherwise, leave the defaults. 
+3. Hit `Export`.
+![Raster Export](tutorial_images/export_raster.png)
 ### Import Files into ArcGIS Pro
 
 ## Other Tools 
