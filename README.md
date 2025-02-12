@@ -4,10 +4,10 @@ Date: February 11 2025
 Software: ArcGIS Drone2Map Version 2023.2.0
 
 ## Setup
-This tutorial, the sample data, and the sample project can be downloaded from: <a>https://github.com/JayMatsushiba/Drone2Map-Tutorial.git</a>.
+This tutorial, the sample data, and the sample project can be downloaded from: <a>https://github.com/SFU-RC/Tutorial-Drone2Map</a>.
 
 If you are familiar with Git and GitHub, you can clone the repository to your device with the following command:
-`git clone https://github.com/JayMatsushiba/Tutorial-Drone2Map.git`
+`git clone https://github.com/SFU-RC/Tutorial-Drone2Map.git`
 
 Simon Fraser University provides an Education Site License for students, staff, and researchers to use Drone2Map for academic use only. Details on how to download, install, and authenticate a copy of the software on your computer can be found here: <a>https://www.lib.sfu.ca/find/other-materials/data-gis/gis/software-arc-gis#-arcgis-drone2map</a> (This link requires you to login)
 
