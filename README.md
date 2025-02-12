@@ -3,7 +3,7 @@ Author: Jay Matsushiba (jmatsush@sfu.ca)
 Date: February 11 2025 
 Software: ArcGIS Drone2Map Version 2023.2.0
 
-This tutorial, the sample data, and the sample project can be downloaded from: https://github.com/JayMatsushiba/Drone2Map-Tutorial.git. This tutorial was originally created by Jay Matsushiba in his role as GIS Peer with Simon Fraser University.   
+This tutorial, the sample data, and the sample project can be downloaded from: <a>https://github.com/JayMatsushiba/Drone2Map-Tutorial.git</a>. This tutorial was originally created by Jay Matsushiba in his role as GIS Peer with Simon Fraser University.   
 
 ## Introduction 
 Aerial drones, or officially known as Remotely Piloted Aircraft Systems (RPAS) in Canada, have enjoyed increased capabilities and ease of use, simultatenous with decreasing cost. These factors have increased their adoption in a range of fields, including in geography for producing maps. Now, with inexpensive hardware (less than $1000 for the RPAS) and software, we can create high resolution georeferenced data products. In this tutorial, we will be showing how to create using our own orthophotos, digital surface models, and digital terrain models with ArcGIS Drone2Map. These output data products will be ready for use in other Geographic Information Systems (GIS), such as ArcGIS Pro and QGIS. 
@@ -48,7 +48,7 @@ You can check for GPS metadata by:
 
 ## Using ArcGIS Drone2Map 
 ### Installation Instructions 
-Simon Fraser University provides an Education Site License for students, staff, and researchers to use Drone2Map for academic use only. Details on how to download, install, and authenticate a copy of the software on your computer can be found here: https://www.lib.sfu.ca/find/other-materials/data-gis/gis/software-arc-gis#-arcgis-drone2map (This link requires you to login)
+Simon Fraser University provides an Education Site License for students, staff, and researchers to use Drone2Map for academic use only. Details on how to download, install, and authenticate a copy of the software on your computer can be found here: <a>https://www.lib.sfu.ca/find/other-materials/data-gis/gis/software-arc-gis#-arcgis-drone2map</a> (This link requires you to login)
 
 ### Creating a New Project
 When you open Drone2Map for the first time, you should be greeted by the following window. 
@@ -130,8 +130,8 @@ With this workflow, you are now equipped to create your own raster layers from y
 
 ## Other Tools 
 ### Creating 3D Models with Epic Games RealityCapture
-Link: https://www.capturingreality.com/  
+Link: <a>https://www.capturingreality.com/</a>
 
 RealityCapture is a great tool for creating 3D models using a technique called photogrammetry. Photogrammetry involves using algorithms to find overlapping points between images to generate three-dimensional geometry. RealityCapture can handle data in the form of images and video files, even without GPS metadata. Therefore, it can be used for a wider range of situations compared to Drone2Map. It does require more powerful computer hardware compared to Drone2Map. In particular, RealityCapture requires a modern NVIDIA graphics card for full functionality. 
 
-There are some good learning resources already produced by Epic Games and Quixel: https://dev.epicgames.com/community/learning/paths/yzG/unreal-engine-capturing-reality-principles-of-photogrammetry-and-scanning. The video games industry (~\$200 billion annual revenue) is colossal compared to GIS (~\$10 billion annual revenue), and therefore these tools that are used by the games industry have orders of magnitude more investment compared to conventional GIS solutions. I would invite you to explore and learn them!  
+There are some good learning resources already produced by Epic Games and Quixel: <a>https://dev.epicgames.com/community/learning/paths/yzG/unreal-engine-capturing-reality-principles-of-photogrammetry-and-scanning</a>. The video games industry (~\$200 billion annual revenue) is colossal compared to GIS (~\$10 billion annual revenue), and therefore these tools that are used by the games industry have orders of magnitude more investment compared to conventional GIS solutions. I would invite you to explore and learn them!  
