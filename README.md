@@ -1,9 +1,9 @@
 # Drone2Map Tutorial 
 Author: Jay Matsushiba (jmatsush@sfu.ca)
 Date: February 11 2025 
-Tutorial Developed for ArcGIS Drone2Map Software Version 2023.2.0
+Software: ArcGIS Drone2Map Version 2023.2.0
 
-This tutorial, the sample data, and the sample project can be downloaded from: https://github.com/JayMatsushiba/Drone2Map-Tutorial.git 
+This tutorial, the sample data, and the sample project can be downloaded from: https://github.com/JayMatsushiba/Drone2Map-Tutorial.git. This tutorial was originally created by Jay Matsushiba in his role as GIS Peer with Simon Fraser University.   
 
 ## Introduction 
 Aerial drones, or officially known as Remotely Piloted Aircraft Systems (RPAS) in Canada, have enjoyed increased capabilities and ease of use, simultatenous with decreasing cost. These factors have increased their adoption in a range of fields, including in geography for producing maps. Now, with inexpensive hardware (less than $1000 for the RPAS) and software, we can create high resolution georeferenced data products. In this tutorial, we will be showing how to create using our own orthophotos, digital surface models, and digital terrain models with ArcGIS Drone2Map. These output data products will be ready for use in other Geographic Information Systems (GIS), such as ArcGIS Pro and QGIS. 
@@ -43,6 +43,7 @@ You can check for GPS metadata by:
 2. Click `Properties` in the dropdown that appears.
 3. Click the `Details` tab in the `Properties` window that appears. 
 4. Scroll down to see if there is a `GPS` section with `Latitude`, `Longitude`, and `Altitude` properties. 
+
 ![GPS metadata view](tutorial_images/gps_metadata.png)
 
 ## Using ArcGIS Drone2Map 
@@ -54,12 +55,14 @@ When you open Drone2Map for the first time, you should be greeted by the followi
 1. We are going to be creating 2D products, so we can select `2D Products` as the option under `Processing Template`. 
 2. Put in your desired project name under `Project Name`.
 3. Change the `Project Location` to where you would like to save the project on your computer by hitting the `Browse` button. 
+
 ![New Project](tutorial_images/new_project.png)
 
 ### Import Images
 You can add the images from the `sample_images` folder, or you can use your own set of images. 
 1. Click the `Add Images` button.
 2. This should open the `Browse for Images` window. In this window, you can select the images you would like to add to your project. 
+
 ![Import Images](tutorial_images/import_images.PNG)
 > <strong>TOP TIP</strong>
 > You can select multiple images with `Ctrl + Left Click`. You can also unselect images with this same shortcut. You can select a range of images by selecting one image, then `Shift + Left Click`. 
@@ -76,6 +79,7 @@ If you have worked with ArcGIS Pro before, this interface should look quite fami
 2. `Content` - describes the layers that are included in the selected map.
 3. `Map` - visualizes the map, with the ability to toggle between 2D and 3D maps 
 4. `Manage` - prompts user along the workflow 
+
 ![Drone2Map Interface](tutorial_images/drone2map_open_project.PNG)
 
 ### Basic Options for Your Project
@@ -84,10 +88,12 @@ For all of the basic options, we are going to leave them as the defaults as pres
 #### Adjust Images
 1. Click `Adjust Images` to view options. 
 2. This window has parameters for adjusting the images and input data (from the metadata attached to the images). Leave these at their defaults.
+
 ![Adjust Images](tutorial_images/adjust_images.PNG)
 #### Dense Matching
 1. Click `Dense Matching` to view options.
 2. This window has parameters for the dense matching algorithms. Dense matching refers to the process of comparing two overlapping images, to identify points likely to be in common between the two images. This is then repeated for all of the images included in the data. Leave these at their defaults.
+
 ![Dense Matching](tutorial_images/dense_matching.PNG)
 #### 2D Products
 1. Click `2D Products` to view options.
@@ -98,15 +104,13 @@ For all of the basic options, we are going to leave them as the defaults as pres
 3. You can leave these parameters as their defaults. 
 
 ![2D Products](tutorial_images/2d_products.PNG)
-
 ### Processing! 
 1. Click on the `Start` button that is within the `Processing` group, under the `Home` menu. 
 2. Your processing has began! You should see at the bottom of the `Manage` pane the progress bar appear. This processing will take a few minutes, so feel free to take a short break here. Once complete, you'll see the progress bar at 100% and the data products will be added to your `2D Map`. 
-![Start Processing](tutorial_images/start_processing.PNG)
 
+![Start Processing](tutorial_images/start_processing.PNG)
 ## End Products
 Once the processing has complete, you will see the data products added to your `2D Map`. These should include the `True Ortho` and the `Digital Surface Model`. Just like in ArcGIS Pro, we can see these layers in the `Contents` pane on the left side of the interface. You can select and reorder the layers to review the outputs and confirm that they are what you expect. 
-
 ### True Ortho
 ![True Ortho](tutorial_images/true_ortho.PNG)
 ### Digital Surface Model 
@@ -115,8 +119,14 @@ Once the processing has complete, you will see the data products added to your `
 1. We can export the rasters we produced by right clicking the layer in the `Contents`, hovering over the `Data` in the dropdown, and then clicking `Export Raster`. 
 2. We should change the `Output Raster Dataset` parameter to change the save location, depending on how you are organizing your files. Make sure the `Output Format` is `TIFF`. Otherwise, leave the defaults. 
 3. Hit `Export`.
+
 ![Raster Export](tutorial_images/export_raster.png)
 ### Import Files into ArcGIS Pro
+As .tiff files, you should be able to import the `True Ortho` and `Digital Surface Model` into ArcGIS Pro like any other raster layer. 
+![ArcGIS Pro Import](tutorial_images/arcgis.png)
+
+<strong>Congratulations! You have finished the tutorial.</strong>
+With this workflow, you are now equipped to create your own raster layers from your own data. From here, I would encourage you to continue experimenting and gaining experience with data acquired from RPAS / drones. This is just the tip of iceberg of what you can accomplish! 
 
 ## Other Tools 
 ### Creating 3D Models with Epic Games RealityCapture
@@ -124,4 +134,4 @@ Link: https://www.capturingreality.com/
 
 RealityCapture is a great tool for creating 3D models using a technique called photogrammetry. Photogrammetry involves using algorithms to find overlapping points between images to generate three-dimensional geometry. RealityCapture can handle data in the form of images and video files, even without GPS metadata. Therefore, it can be used for a wider range of situations compared to Drone2Map. It does require more powerful computer hardware compared to Drone2Map. In particular, RealityCapture requires a modern NVIDIA graphics card for full functionality. 
 
-There are some good learning resources already produced by Epic Games and Quixel: https://dev.epicgames.com/community/learning/paths/yzG/unreal-engine-capturing-reality-principles-of-photogrammetry-and-scanning. The video games industry (~$200 billion annual revenue) is colossal compared to GIS (~$10 billion annual revenue), and therefore these tools that are used by the games industry have orders of magnitude more investment compared to conventional GIS solutions. I would invite you to explore and learn them!  
+There are some good learning resources already produced by Epic Games and Quixel: https://dev.epicgames.com/community/learning/paths/yzG/unreal-engine-capturing-reality-principles-of-photogrammetry-and-scanning. The video games industry (~\$200 billion annual revenue) is colossal compared to GIS (~\$10 billion annual revenue), and therefore these tools that are used by the games industry have orders of magnitude more investment compared to conventional GIS solutions. I would invite you to explore and learn them!  
